@@ -1,0 +1,57 @@
+body {
+  background: white;
+  color: black;
+
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 14pt;
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+}
+
+button {
+  margin: 12px;
+}
+
+#tablero {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#tablero tr td{
+  border:1px solid gray;
+  background-color: rgb(49, 49, 49);
+  width: 80px;
+  height: 80px;
+  text-align: center;
+}
+
+#tablero tr td.clicked {
+    background: rgb(44, 44, 156);
+}
+
+#tablero tr td.mine {
+  
+    background: #791010;
+    background-image: url("/img/mine-146747_960_720.png");
+}
+
+.contianer{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.options{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+.borde{
+  border: solid 3px rgb(47, 0, 255);
+}

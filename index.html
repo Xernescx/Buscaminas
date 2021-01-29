@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type = "text/css" href="Estilos/estilo.css">
+        <title>Buscaminas</title>
+    </head>
+    <body>
+        <h1>Buscaminas</h1>
+        <div class="contianer">
+            <div class="borde">
+                <h2>Dificultad</h2>
+                <div class="options">
+                    <div>
+                        <input type="radio" id="easy" name="options" value="easy" checked/>
+                        <label>Fácil</label>
+                    </div>
+    
+                    <div>
+                        <input type="radio" id="normal" name="options" value="normal"/>
+                        <label>Normal</label>
+                    </div>
+    
+                    <div>
+                        <input type="radio" id="hard" name="options" value="hard"/>
+                        <label>Dificil</label>
+                    </div>
+    
+                    <div>
+                        <input type="radio" id="custom" name="options" value="custom"/>
+                        <label>Personalizado</label>
+                    </div>
+                    <div class="container"> 
+                        <p>Filas: </p>
+                        <input type="number" id="numRow" min="1" max="10"/>
+                        <p>Columnas: </p>
+                        <input type="number" id="numColumn" min="1" max="10"/>
+                    </div>
+    
+                    <div id="errorNumbersText" class="errorText"></div>
+                    
+                    <button onclick='sizeboard();'>
+                        Empezar
+                    </button>
+                </div>
+            </div>
+            
+            <table id= "tablero" class="borde">
+            </table>
+
+            
+            
+        </div>
+
+        <script type="text/javascript" src="Js/buscaminas.js"></script>
+    </body>
+</html>
